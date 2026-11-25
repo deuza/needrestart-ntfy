@@ -1,0 +1,7 @@
+0015692573ee947a02694344714db890221af10b65505138d2c330ba0901601f  etc/apt/apt.conf.d/98needrestart-ntfy
+ac78ea4301fcce331fd2af618b020e4f8dcc8c19f998e8f3764f82b749497ee5  etc/apt/apt.conf.d/99zz-needrestart-ntfy
+a42c3dd0b26b79a733214850ec03f8bc773adf8696a21ac359d3ee083559ce6c  etc/needrestart/conf.d/50-autorestart.conf
+e1200565feb8e887760102d44df8e4fcc4b1cd28270cdf91d2f783991d161bd9  etc/ntfy-send.conf
+ee5c1aad9414120375afc027109f5e3a4914ccfc0f7078df37023c342ea83c45  usr/local/sbin/needrestart-ntfy-apt.sh
+80eb6109a052254fd2bbdc43b6fcb06fdf8ae41c26742b18d5e93eaa88698c1e  usr/local/sbin/needrestart-ntfy.sh
+055e518771acef0e2a3fdc9a07443f49dc842aa7b2426dffc79345ca5d1c9839  usr/local/sbin/ntfy-send.sh

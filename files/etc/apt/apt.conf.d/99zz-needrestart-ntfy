@@ -1,0 +1,4 @@
+# needrestart-ntfy - second hook, lu APRÈS 99needrestart (voir
+# 98needrestart-ntfy pour l'explication).
+
+DPkg::Post-Invoke {"test -x /usr/local/sbin/needrestart-ntfy-apt.sh && /usr/local/sbin/needrestart-ntfy-apt.sh after || true"; };

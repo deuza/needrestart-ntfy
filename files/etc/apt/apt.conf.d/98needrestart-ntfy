@@ -1,0 +1,11 @@
+# needrestart-ntfy - notification ntfy des services relancés par needrestart
+#
+# Ce fichier doit être lu AVANT 99needrestart : son DPkg::Post-Invoke
+# ("before") doit passer avant celui de needrestart. Le second hook
+# ("after") est dans 99zz-needrestart-ntfy, lu APRÈS 99needrestart.
+# Vérification de l'ordre : apt-config dump | grep -E '^DPkg::(Pre|Post)-Invoke'
+#
+# Le "|| true" garantit qu'un problème du script ne fait jamais échouer apt.
+
+DPkg::Pre-Invoke {"test -x /usr/local/sbin/needrestart-ntfy-apt.sh && /usr/local/sbin/needrestart-ntfy-apt.sh mark || true"; };
+DPkg::Post-Invoke {"test -x /usr/local/sbin/needrestart-ntfy-apt.sh && /usr/local/sbin/needrestart-ntfy-apt.sh before || true"; };
